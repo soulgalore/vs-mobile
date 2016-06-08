@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title= pageTitle
+        meta(name='description', content='Devicelab')
+        link(rel='stylesheet', href='/css/normalize.css')
+        link(rel='stylesheet', href='/css/skeleton.css')
+        link(rel='stylesheet', href='/css/extras.css')
+        link(rel='stylesheet', href='/css/perf-cascade-full.css')
+        block insideHead
+
+    body
+      include ./header.pug
+      .container.inthemiddle
+
+        block content
+
+        include ./footer.pug
+      

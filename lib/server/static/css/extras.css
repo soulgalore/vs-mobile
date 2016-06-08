@@ -1,0 +1,88 @@
+#analyze-url {
+    width: 100%;
+}
+
+#center {
+text-align:center;
+}
+
+#fixed {
+    margin: 50%;
+    position: fixed;
+    z-index: 1;
+}
+
+.inthemiddle {
+  height: 200px; /*Set line-height to this value*/
+  width: 800px;
+  margin: 150px auto;
+}
+
+/*
+h1 {
+  font: 40px/200px Helvetica, sans-serif;
+  text-align: center;
+}
+*/
+
+.hepp {
+  padding: 10px;
+}
+
+/** Tables */
+
+table {
+  width: 100%;
+}
+
+.large {
+    padding: 10px;
+    font: 32px Helvetica, sans-serif;
+    text-align: center;
+}
+
+.medium {
+    padding: 10px;
+    font: 22px Helvetica, sans-serif;
+    text-align: left;
+}
+
+.small {
+    padding: 6px;
+    font: 12px Helvetica, sans-serif;
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+footer {
+  text-align: center;
+}
+
+th,
+td {
+  padding: 4px 15px;
+  border: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 15px; }
+th:last-child,
+td:last-child {
+  padding-right: 15px; }
+
+tr:nth-child(odd) {background: #f9f9f9}
+tr:nth-child(even) {background: #FFF}
+
+th {
+  background: #e1f6fd;
+}
+
+td.number {
+  text-align: right;
+}
+
+code {
+  font-size:70%
+}

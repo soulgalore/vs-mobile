@@ -1,0 +1,23 @@
+extends ./layout.pug
+block content
+    h2 URL
+    form#analyze-form(method='post', action='/')
+      input#analyze-url(name='url', type='url', required='', pattern='https?://.+', placeholder='http(s)://', title='Add a URL starting with http(s)://')
+      h3 versus
+      input#analyze-url(name='url', type='url', pattern='https?://.+', placeholder='http(s)://', title='Add a URL starting with http(s)://')
+      span.hepp Devices:
+      select(name='deviceId')
+        each device in devices
+         #{device.id}
+          option(value=device.id, selected='') #{device.model}
+      span.hepp Runs:
+        select(name='iterations')
+            option(value='1') 1
+            option(value='11') 11
+            option(value='31') 31
+            option(value='51') 51
+      input.button-primary(type='submit', value='Start')
+      .small
+        p Did you know that you also can use the&nbsp;
+          a(href='/api/') API
+          |.

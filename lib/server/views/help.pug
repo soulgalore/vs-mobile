@@ -1,0 +1,24 @@
+extends ./layout.pug
+block content
+  .large Help
+  .medium.left
+    ul
+      li Install&nbsp;
+        a(href="http://developer.android.com/sdk/index.html#downloads") ADB command lines tools
+        | &nbsp;and&nbsp;
+        a(href='http://spring.io/guides/gs/android/') add it to your $PATH
+        | and continue to install the latest Android SDK.
+      li Enable developer USB access to your phone: Go to&nbsp;
+        b About device
+        | , tap it, scroll down to the&nbsp;
+        b Build number
+        |, tap it seven (7) times.
+      li Disable screen lock on your device.
+      li Turn off Background App Refresh on your device.
+      li Enable USB debugging in the device system settings, under&nbsp;
+        b Developer options
+        |.
+      li Plugin your phone to your computer (hey you can have multiple phones!).
+      li Go to the&nbsp;
+        a(href='/') start page
+        | .

@@ -1,0 +1,11 @@
+extends ./layout.pug
+
+block insideHead
+  meta(http-equiv='refresh', content='5')
+  - messages = ['Waiting to finish', 'Yep this can take a while','Just take it easy'],
+
+block content
+  - mess = messages[Math.floor(Math.random()*messages.length)];
+  h2 #{status} #{url}
+  p There is #{queueSize} URL(s) in the queue.
+  p #{mess}

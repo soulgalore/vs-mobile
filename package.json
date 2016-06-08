@@ -1,0 +1,48 @@
+{
+  "name": "vs-mobile",
+  "bin": "./lib/server/app.js",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+
+  ],
+  "homepage": "https://github.com/soulgalore/vs-mobile",
+  "license": "GPLv3",
+  "author": {
+    "name": "Peter Hedenskog",
+    "url": "https://www.peterhedenskog.com"
+  },
+  "contributors": [{
+    "name": ""
+  }],
+  "repository": {
+    "type": "git",
+    "url": "//"
+  },
+  "bugs": {
+    "url": "//"
+  },
+  "scripts": {
+    "lint": "npm run eslint && npm run pug-lint",
+    "start": "node lib/server/app.js",
+    "eslint": "eslint .",
+    "pug-lint": "pug-lint lib/server/views/"
+  },
+  "engines": {
+    "node": ">=4.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.0.0",
+    "pug-lint": "^2.1.6"
+  },
+  "dependencies": {
+    "adbkit": "2.4.1",
+    "bluebird": "3.3.5",
+    "browsertime": "1.0.0-alpha.20",
+    "body-parser": "^1.14.2",
+    "concurrent-queue": "7.0.1",
+    "express": "4.13.4",
+    "node-uuid": "^1.4.7",
+    "pug": "2.0.0-alpha6"
+  }
+}

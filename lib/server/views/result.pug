@@ -1,0 +1,49 @@
+extends ./layout.pug
+
+block insideHead
+
+
+block content
+  - var metrics = ['firstPaint','fullyLoaded']
+  - var values = ['min','median','p90','max']
+    h3 #{result.info.url}
+    p Tested #{result.browserScripts.length} runs using User Agent: #{result.browserScripts[0].browser.userAgent}
+    table
+      tr
+        th Metric
+        each value in values
+          th #{value}
+      each metric in metrics
+        tr
+          td #{metric}
+          each value in values
+            td #{result.statistics.timings[metric][value]}
+      - if (result.statistics.timings.userTimings)
+        - const marks = Object.keys(result.statistics.timings.userTimings.marks)
+          each mark in marks
+            tr
+              td #{mark}
+              each value in values
+                td #{result.statistics.timings.userTimings.marks[mark][value]}
+
+    a(href='/har/'+id + '.har') Download HAR file
+    p Choose HAR:
+      select#page-selector
+    div#output
+
+    script(src='/js/perf-cascade.min.js')
+    script(type='text/javascript').
+      var outputHolderEl = document.getElementById("output");
+      var pageSelectorEl = document.getElementById("page-selector");
+      var options = {
+        rowHeight: 20, //default: 23
+        showAlignmentHelpers : true, //default: true
+        showIndicatorIcons: false, //default: true
+        leftColumnWith: 30 ,//default: 25
+        pageSelector: pageSelectorEl
+      };
+
+      /** pass HAR and options to `newPerfCascadeHar` to generate the SVG element*/
+      var har= !{JSON.stringify(har.log)};
+      var perfCascadeSvg =  perfCascade.fromHar(har, options);
+      outputHolderEl.appendChild(perfCascadeSvg);
