@@ -1,9 +1,9 @@
 {
   "name": "vs-mobile",
   "bin": "./lib/server/app.js",
-  "version": "0.0.1",
-  "description": "",
-  "keywords": [
+  "version": "0.0.0",
+  "description": "Test the performance of your page using you android phone",
+  "keywords": [ "mobile", "performance", "android"
 
   ],
   "homepage": "https://github.com/soulgalore/vs-mobile",
