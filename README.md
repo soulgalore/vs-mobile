@@ -4,7 +4,7 @@ Test the performance of your page using your Android phone. Test one page or tes
 ![Start page](start.png)
 
 # What you get
-Your page will be tested using Chrome and metrics will be collected using the Navigation Timing API and Chromes first paint. You will get a HAR file containing all the runs.
+Your page will be tested using Chrome and metrics will be collected using Javascript from the Navigation Timing API and Chromes first paint. You will get a HAR file containing all the runs.
 
 The result looks like this:
 ![Result page](result.png)
