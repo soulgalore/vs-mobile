@@ -4,7 +4,7 @@ Test the performance of your page using your Android phone. Test one page or tes
 ![Start page](start.png)
 
 # What you get
-Your page will be tested using Chrome and metrics will be collected using Javascript from the Navigation Timing API and Chromes first paint. You will get a HAR file containing all the runs.
+Your page will be tested using Chrome and metrics will be collected using Javascript from the Navigation Timing API, User Timing API, Resource Timing API and Chromes first paint using [Browsertime](https://github.com/tobli/browsertime). You will get a HAR file containing all the runs. The HAR is displayed using [PerfCascade](https://github.com/micmro/PerfCascade).
 
 The result looks like this:
 ![Result page](result.png)
