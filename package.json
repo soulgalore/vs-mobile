@@ -2,11 +2,13 @@
   "name": "vs-mobile",
   "bin": "./lib/server/app.js",
   "version": "0.0.1",
-  "description": "Test the performance of your page using you android phone",
+  "description": "Test the performance of your page using you Android phone",
   "keywords": [
     "mobile",
     "performance",
-    "android"
+    "android",
+    "webperf",
+    "perfmatters"
   ],
   "homepage": "https://github.com/soulgalore/vs-mobile",
   "license": "GPLv3",
@@ -21,19 +23,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": "//"
+    "url": "git@github.com:soulgalore/vs-mobile.git"
   },
   "bugs": {
-    "url": "//"
+    "url": "https://github.com/soulgalore/vs-mobile/issues"
   },
   "scripts": {
     "lint": "npm run eslint && npm run pug-lint",
     "start": "node lib/server/app.js",
     "eslint": "eslint .",
-    "pug-lint": "pug-lint lib/server/views/"
+    "pug-lint": "pug-lint lib/server/views/",
+    "travis": "npm run lint"
   },
   "engines": {
-    "node": ">=4.3.0"
+    "node": ">=4.4.5"
   },
   "devDependencies": {
     "eslint": "^2.11.0",
