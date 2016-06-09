@@ -25,6 +25,8 @@ Checkout [the issues](https://github.com/soulgalore/vs-mobile/issues) what's lef
 * Enable *USB debugging* in the device system settings, under *Developer options*.
 * Install the [Stay Alive app](https://play.google.com/store/apps/details?id=com.synetics.stay.alive) and start it.
 
+## Connectivity
+Setup [phuedxs](https://github.com/phuedx) [Micro Device Lab](https://github.com/phuedx/micro-device-lab) and connect your phone to the wifi you want to use.
 
 ## Start
 ```
