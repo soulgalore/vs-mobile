@@ -32,17 +32,28 @@
     "lint": "npm run eslint && npm run pug-lint",
     "start": "node lib/server/app.js",
     "eslint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "pug-lint": "pug-lint lib/server/views/",
     "travis": "npm run lint"
   },
   "engines": {
-    "node": ">=4.4.5"
+    "node": ">=8.9.0"
   },
   "devDependencies": {
-    "eslint": "^2.11.0",
-    "eslint-config-airbnb-base": "3.0.1",
-    "eslint-plugin-import": "1.8.1",
-    "pug-lint": "2.5.0"
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "clean-css-cli": "^4.1.11",
+    "eclint": "^2.6.0",
+    "eslint": "^4.18.2",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "jsdoc": "^3.3.3",
+    "license-checker": "^16.0.0",
+    "mocha": "^5.0.4",
+    "node-sass": "^4.7.2",
+    "prettier": "^1.11.1",
+    "pug-lint": "^2.5.0",
+    "pug-lint-config-clock": "^2.0.0"
   },
   "dependencies": {
     "adbkit": "2.11.0",
